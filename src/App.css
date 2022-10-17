@@ -1,0 +1,99 @@
+:root{
+  /* --mainGray: #383c48;
+  --lightGray: #484c65; */
+  --barColor: #ad7253;
+  --barColorLight: #888cA1;
+  --darkGrey: #585c71;
+  --mainGray: #EFEEF4;
+  --lightGray: #EEF;
+  --darkBackground: #484c51;
+  --lightBackground: #e6ecef;
+  --mainBackground: #e6ecef;
+  /* --darkGrey: #888cA1; */
+  --textBlack: #000;
+  --textWhite: #FFF;
+  --cardBackground: var(--mainGray);
+  --textColor: var(--textBlack);
+  --mainFontSize: calc(15px + 0.3vw);
+  --bigFontSize: calc(20px + 1vw);
+  --smallFontSize: calc(10px + 0.2vw);
+  --standartFontSize: calc(15px + 0.4vw);
+}
+
+
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  background-color: var(--mainBackground);
+  font-size: calc(10px + 2vmin);
+  font-family: 'Comfortaa', cursive;
+  color: var(--textColor);
+}
+
+
+.dark-theme{
+  --textColor: var(--textWhite);
+  --mainBackground: var(--darkBackground);
+  --cardBackground: var(--darkGrey);
+  --backgroundTexture: url("black_concrete.jpg");
+  --footerBackground: url("black_concrete.jpg");
+}
+
+.white-theme{
+  --textColor: var(--textBlack);
+  --mainBackground: var(--lightBackground);
+  --cardBackground: var(--mainGray);
+  --backgroundTexture: url("cementl-texture-small.jpg");
+  --footerBackground: url("concrete_background.jpg");
+}
+
+.current-text-color {
+  color: var(--textColor);
+}
+
+.medium-text{
+  font-size: var(--standartFontSize) !important;
+}
+
+.app_content {
+    flex: 1;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+.Header-title {
+  font-size: calc(15px + 3vmin) !important;
+  font-family: fantasy;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
